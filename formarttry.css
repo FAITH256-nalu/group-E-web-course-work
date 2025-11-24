@@ -1,0 +1,56 @@
+/* Full-page water background */
+    body {
+      background-image: url('./unnamed.webp');
+      /* Replace with your water image path */
+      background-size: cover;
+      /* Make it cover entire page */
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      /* Stays in place when scrolling */
+      background-position: center;
+    }
+
+    /* Enlarged Navbar */
+    .navbar {
+      height: 120px;
+      /* Increase navbar height */
+      padding-top: 1.5rem;
+      padding-bottom: 1.5rem;
+      /*background-image: url('./unnamed.webp');
+      /* Optional: navbar-specific water background */
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    /* Navbar brand font size */
+    .navbar-brand {
+      font-size: 2rem;
+      color: white !important;
+    }
+
+    /* Optional: make dropdown menu semi-transparent to see background */
+    .dropdown-menu {
+      background-color: rgba(255, 255, 255, 0.85);
+    }
+
+    /* Animated Logo Example */
+    .logo-anim {
+      width: 60px;
+      animation: pulse 2s infinite;
+      margin-right: 15px;
+    }
+
+    @keyframes pulse {
+      0% {
+        transform: scale(1);
+      }
+
+      50% {
+        transform: scale(1.2);
+      }
+
+      100% {
+        transform: scale(1);
+      }
+    }
