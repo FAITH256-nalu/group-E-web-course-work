@@ -6,10 +6,10 @@
     <link rel="stylesheet" href="./home.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SKY TOWERS AND TRAVEL</title>
-    
-
+     
 </head>
 <body>
+   
     <section class="Activities">
         <div class="nav">
             <div class="logo"><h1>SKY TOURS <b>TRAVEL</b></h1></div>
@@ -33,14 +33,14 @@
         <div class="content">
             <div class="content-left">
                 <div class="info">
-                    <h2>Book A Staycation<br>Anytime</h2>
-                    <p>Discover the world with us,<br>
+                    <h2 class="fade-in">Book A Staycation<br>Anytime</h2>
+                    <p class="fade-in">Discover the world with us,<br>
                         We turn every journey into an unforgettable adventure,<br>
                         We are here to make your travel smooth,<br>
                         exciting and truly memorable.
                     </p>
                 </div>
-                <button>Explore</button>
+                <button class="fade-in">Explore</button>
             </div>
             <div class=" circle-content-right">
                 <img src="https://faith256-nalu.github.io/group-E-web-course-work/images/index/trvel.jpg" alt="">
@@ -84,8 +84,16 @@
 
         </div>
     </footer>
+        <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const elements = document.querySelectorAll(".fade-in");
 
-  </div>
-
+            elements.forEach((el) => {
+                setTimeout(() => {
+                    el.classList.add("show");
+                }, 200); 
+            });
+        });
+        </script>   
 </body>
 </html>
